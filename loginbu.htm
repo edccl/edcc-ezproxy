@@ -23,11 +23,14 @@
 
 <div class="col-sm-6">
 
+    <div class="alert alert-info">
+        <strong>New for Fall Quarter!</strong> Students, please use your Canvas username and password to access library databases from off-campus.
+    </div>
+
 	<div class="alert alert-danger" role="alert">
-	That Student ID Number and/or last name was incorrect. Please try again, or call the reference desk for assistance.
+	That Student ID Number and/or password was incorrect. Please try again, or call the reference desk for assistance.
 	</div>
 
-    <h3>Please enter:</h3>
     <form action="/login" method="post">
     <input type="hidden" name="url" value="^U"/>
         <div class="form-group">
@@ -36,7 +39,7 @@
             <small id="IDhelp" class="form-text text-muted">Lost your ID number? Please call enrollment services at <a href="tel:425-640-1459" tabindex="3">425-640-1459</a>.</small>
         </div>
         <div class="form-group">
-            <label for="password">Last Name</label>
+            <label for="password">Canvas Password (Faculty and Staff: Please enter your last name.)</label>
             <input type="password" name="pass" class="form-control form-control-lg" aria-describedby="Student Last Name"/>
         </div>
         <button type="submit" class="btn btn-primary">Login</button>
