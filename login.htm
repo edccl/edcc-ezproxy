@@ -22,7 +22,9 @@
 </div>
 
 <div class="col-sm-6">
-    <h3>Please enter:</h3>
+    <div class="alert alert-info">
+    <strong>New for Fall Quarter!</strong> Students, please use your Canvas username and password to access library databases from off-campus.
+    </div>
     <form action="/login" method="post">
     <input type="hidden" name="url" value="^U"/>
         <div class="form-group">
@@ -31,7 +33,7 @@
             <small id="IDhelp" class="form-text text-muted">Lost your ID number? Please call enrollment services at <a href="tel:425-640-1459" tabindex="4">425-640-1459</a>.</small>
         </div>
         <div class="form-group">
-            <label for="password">Last Name</label>
+            <label for="password">Canvas Password (Faculty and Staff: Please enter your last name.)</label>
             <input type="password" name="pass" class="form-control form-control-lg" aria-describedby="Student Last Name" tabindex="2"/>
         </div>
         <button type="submit" class="btn btn-primary" tabindex="3">Login</button>
