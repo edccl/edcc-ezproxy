@@ -5,43 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./public/edcc-style.css">
-    <title>EdCC Off-Campus Login</title>
+    <title>Edmonds College Off-Campus Login</title>
 </head>
 
 <body>
 <div class="container">
     
-<img src="./public/ec-college-logo.png" alt="Edmonds College">
+<img src="./public/ec-college-logo.png" alt="Edmonds College" style="margin-bottom: 1rem;">
 
 <div class="row">
-<div class="col-sm-6">
-    <h1>Off-Campus Login</h1>
-    <p>Use of this page and all subscription databases is limited to currently registered Edmonds College students and currently employed Edmonds College staff/faculty.</p>
-    <p>If you experience login difficulties, <a href="http://edcc.libguides.com/website/offcampus" target="_blank">please read this page</a> and try again.</p>
-    <p>For assistance, contact the reference desk at <a href="tel:425-640-1472">425-640-1472</a>.</p>
-</div>
+    <div class="col-sm-6">
+        <h1>Off-Campus Login</h1>
+        <p>Use of this page and all subscription databases is limited to currently registered Edmonds College students and currently employed Edmonds College staff/faculty.</p>
+        <p>If you experience login difficulties, <a href="http://edcc.libguides.com/website/offcampus" target="_blank">please read this page</a> and try again.</p>
+        <p>For assistance, <!--contact the reference desk at <a href="tel:425-640-1472">425-640-1472</a> or --> please use our <a href="https://edcc.libguides.com/chat" target="_blank">chat service</a> to connect with a librarian.</p>
+    </div>
 
 <div class="col-sm-6">
 
     <div class="alert alert-info">
-        Students, please use your Canvas username and password to access library databases from off-campus. Faculty and staff, please login using your campus network credentials. 
-    </div>
+        <h3>New for Spring 2021!</h3>
+        <p>
+            All students will need to activate their new Triton ID in order to log in to library databases, Kanopy, student email, campus Wifi, Chromebooks, and computer lab computers. 
+        </p>
+        <p>
+            Before you look up your new Triton ID, you must first set up your ctcLink account. For help with setting your ctcLink account, please see <a href="https://students.edmonds.edu/ctclink/default.html" target="_blank">our ctcLink Information for Students page.</a>
+        </p>
+        <p>
+            To look up your Triton ID, please use our new <a href="http://go.edmonds.edu/tritonidlookup" target="blank">Triton ID Lookup Tool.</a>
+        </p>
+           
+        <p>
+            Faculty and staff, please login using your campus network credentials.
+        </p>
+        </div>
 
 	<div class="alert alert-danger" role="alert">
-	That Student ID Number, username, and/or password was incorrect. Please try again, or call the reference desk for assistance.
+	That Triton ID username and/or password was incorrect. Please try again, or <a href="https://edcc.libguides.com/chat" target="_blank">contact a librarian</a> for assistance.
 	</div>
 
     <form action="/login" method="post">
     <input type="hidden" name="url" value="^U"/>
         <div class="form-group">
-            <label for="SID">Student ID Number/Username</label>
-            <input type="text" name="user" class="form-control form-control-lg" aria-describedby="Student ID Number"/>
-            <small id="IDhelp" class="form-text text-muted">Lost your ID number? Please call enrollment services at <a href="tel:425-640-1459" tabindex="3">425-640-1459</a>.</small>
+            <label for="SID">Triton ID</label>
+            <input type="text" name="user" class="form-control form-control-lg" aria-describedby="Triton ID"/>
+            <small id="IDhelp" class="form-text text-muted">Need to activate your Triton ID? Please use our <a href="https://app.edcc.edu/TritonIDLookup/getID.cfm/" target="_blank">Triton ID Lookup Tool</a>.</small>
         </div>
         <div class="form-group">
             <label for="password">Password</label>
             <input type="password" name="pass" class="form-control form-control-lg" aria-describedby="Student Last Name"/>
-            <small id="IDhelp" class="form-text text-muted">Click here to reset your <a href="https://acsweb1.edcc.edu/ACSDomainPwdChange1/" target="_blank">Canvas password.</a></small>
+            <small id="IDhelp" class="form-text text-muted">Click here to reset your <a href="https://edmonds.okta.com/" target="_blank">Triton ID password</a> or to look up your Triton ID account information.</small>
         </div>
         <button type="submit" class="btn btn-primary">Login</button>
     </form>
@@ -49,6 +62,8 @@
 
 </div>
 </div>
+
+<!--   Students, please use your Canvas username and password to access library databases from off-campus. As we continue to help students activate their <a href="https://students.edmonds.edu/ctclink/" target="_blank">new ctcLink accounts</a> during Spring Quarter, please log in using your <b>old Canvas information</b> (your SID might start with '955' or '804'). Having trouble? A <a href="https://acsweb1.edcc.edu/acsdomainpwdchange1/" target="_blank">password reset</a> will solve most log in issues. -->
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
